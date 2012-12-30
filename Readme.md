@@ -1,6 +1,7 @@
 # digital clock
  a simple retro digital clock
-  
+
+![digital clock](http://i.imgur.com/b6UvV.png)
 
 ## Installation
 
