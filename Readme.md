@@ -1,5 +1,5 @@
 # digital clock
- a simple, responsive (and don't forget retro!) digital clock. because, why not?
+ a simple, responsive (and don't forget retro!) digital clock written entirely in CSS and JS. because, why not?
 
 ![digital clock](http://i.imgur.com/b6UvV.png)
 
