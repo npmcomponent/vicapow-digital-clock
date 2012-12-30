@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Retro Digital Clock</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="../build/build.css" type="text/css">
+    <style>
+      /* remove the default padding */
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+      body {
+        font: 14px Helvetica, Arial, sans-serif;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="../build/build.js"></script>
+    <script>
+      var DigitalClock = require('digital-clock')
+      var clock = new DigitalClock({seconds:true})
+      clock.el.appendTo('body')
+      // clock.setHours(1)
+      // clock.setMinutes(23)
+      // clock.setSeconds(45)
+      setInterval(function(){
+        clock.setTime(new Date)
+      }, 1000)
+      clock.setTime(new Date)
+    </script>
+  </body>
+</html>

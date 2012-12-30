@@ -1,0 +1,20 @@
+{
+  "name": "digital-clock",
+  "repo": "vicapow/digital-clock",
+  "description": "",
+  "version": "0.0.1",
+  "keywords": ["retro", "clock", "digital", "digit"],
+  "dependencies": {
+    "component/jquery": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js", 
+    "template-clock.js",
+    "template-digit.js"
+  ],
+  "styles": [
+    "digital-clock.css"
+  ]
+}

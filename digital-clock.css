@@ -1,0 +1,348 @@
+/*---------------------------------------------------
+    LESS Elements 0.6
+  ---------------------------------------------------
+    A set of useful LESS mixins by Dmitry Fadeyev
+    Special thanks for mixin suggestions to:
+      Kris Van Herzeele,
+      Benoit Adam,
+      Portenart Emile-Victor,
+      Ryan Faerman
+
+    More info at: http://lesselements.com
+-----------------------------------------------------*/
+.pixel {
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #333333;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #333333), color-stop(1, #333333));
+  background: -ms-linear-gradient(bottom, #333333, #333333);
+  background: -moz-linear-gradient(center bottom, #333333 0%, #333333 100%);
+  -webkit-box-shadow: inset 0px 0px 40px #000000;
+  -moz-box-shadow: inset 0px 0px 40px #000000;
+  box-shadow: inset 0px 0px 40px #000000;
+}
+.digit {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+.digit .row {
+  width: 100%;
+  height: 100%;
+}
+.digit .row.hor {
+  float: left;
+  clear: both;
+  height: 14.285714285714286%;
+  width: 100%;
+}
+.digit .row.hor .pixel {
+  width: 25%;
+  height: 100%;
+}
+.digit .row.ver {
+  float: left;
+  width: 25%;
+  height: 28.57142857142857%;
+}
+.digit .row.ver .pixel {
+  width: 100%;
+  height: 50%;
+}
+.digit .row.ver.top-right,
+.digit .row.ver.bot-right {
+  float: right;
+}
+.digit .row.top .pixel,
+.digit .row.mid .pixel,
+.digit .row.bot .pixel {
+  float: left;
+}
+.digit .left-top-row,
+.digit .left-bottom-row {
+  clear: both;
+  float: left;
+}
+.digit .right-top-row,
+.digit .right-bottom-row {
+  float: right;
+}
+.digit .mid-row,
+.digit .bottom-row {
+  clear: both;
+}
+.digit.number0 .pixel {
+  -webkit-box-shadow: 0 1px 30px #ff0000;
+  -moz-box-shadow: 0 1px 30px #ff0000;
+  box-shadow: 0 1px 30px #ff0000;
+  background: #ff8a00;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ff8a00), color-stop(1, #f5ca00));
+  background: -ms-linear-gradient(bottom, #ff8a00, #f5ca00);
+  background: -moz-linear-gradient(center bottom, #ff8a00 0%, #f5ca00 100%);
+  z-index: 2;
+}
+.digit.number0 .pixel10,
+.digit.number0 .pixel11 {
+  background: #333333;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #333333), color-stop(1, #333333));
+  background: -ms-linear-gradient(bottom, #333333, #333333);
+  background: -moz-linear-gradient(center bottom, #333333 0%, #333333 100%);
+  -webkit-box-shadow: inset 0px 0px 40px #000000;
+  -moz-box-shadow: inset 0px 0px 40px #000000;
+  box-shadow: inset 0px 0px 40px #000000;
+}
+.digit.number1 .pixel4,
+.digit.number1 .pixel6,
+.digit.number1 .pixel8,
+.digit.number1 .pixel12,
+.digit.number1 .pixel14,
+.digit.number1 .pixel16,
+.digit.number1 .pixel20 {
+  -webkit-box-shadow: 0 1px 30px #ff0000;
+  -moz-box-shadow: 0 1px 30px #ff0000;
+  box-shadow: 0 1px 30px #ff0000;
+  background: #ff8a00;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ff8a00), color-stop(1, #f5ca00));
+  background: -ms-linear-gradient(bottom, #ff8a00, #f5ca00);
+  background: -moz-linear-gradient(center bottom, #ff8a00 0%, #f5ca00 100%);
+  z-index: 2;
+}
+.digit.number2 .pixel1,
+.digit.number2 .pixel2,
+.digit.number2 .pixel3,
+.digit.number2 .pixel4,
+.digit.number2 .pixel6,
+.digit.number2 .pixel8,
+.digit.number2 .pixel9,
+.digit.number2 .pixel10,
+.digit.number2 .pixel11,
+.digit.number2 .pixel12,
+.digit.number2 .pixel13,
+.digit.number2 .pixel15,
+.digit.number2 .pixel17,
+.digit.number2 .pixel18,
+.digit.number2 .pixel19,
+.digit.number2 .pixel20 {
+  -webkit-box-shadow: 0 1px 30px #ff0000;
+  -moz-box-shadow: 0 1px 30px #ff0000;
+  box-shadow: 0 1px 30px #ff0000;
+  background: #ff8a00;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ff8a00), color-stop(1, #f5ca00));
+  background: -ms-linear-gradient(bottom, #ff8a00, #f5ca00);
+  background: -moz-linear-gradient(center bottom, #ff8a00 0%, #f5ca00 100%);
+  z-index: 2;
+}
+.digit.number3 .pixel1,
+.digit.number3 .pixel2,
+.digit.number3 .pixel3,
+.digit.number3 .pixel4,
+.digit.number3 .pixel6,
+.digit.number3 .pixel8,
+.digit.number3 .pixel10,
+.digit.number3 .pixel11,
+.digit.number3 .pixel12,
+.digit.number3 .pixel14,
+.digit.number3 .pixel16,
+.digit.number3 .pixel17,
+.digit.number3 .pixel18,
+.digit.number3 .pixel19,
+.digit.number3 .pixel20 {
+  -webkit-box-shadow: 0 1px 30px #ff0000;
+  -moz-box-shadow: 0 1px 30px #ff0000;
+  box-shadow: 0 1px 30px #ff0000;
+  background: #ff8a00;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ff8a00), color-stop(1, #f5ca00));
+  background: -ms-linear-gradient(bottom, #ff8a00, #f5ca00);
+  background: -moz-linear-gradient(center bottom, #ff8a00 0%, #f5ca00 100%);
+  z-index: 2;
+}
+.digit.number4 .pixel1,
+.digit.number4 .pixel4,
+.digit.number4 .pixel5,
+.digit.number4 .pixel6,
+.digit.number4 .pixel7,
+.digit.number4 .pixel8,
+.digit.number4 .pixel9,
+.digit.number4 .pixel10,
+.digit.number4 .pixel11,
+.digit.number4 .pixel12,
+.digit.number4 .pixel14,
+.digit.number4 .pixel16,
+.digit.number4 .pixel20 {
+  -webkit-box-shadow: 0 1px 30px #ff0000;
+  -moz-box-shadow: 0 1px 30px #ff0000;
+  box-shadow: 0 1px 30px #ff0000;
+  background: #ff8a00;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ff8a00), color-stop(1, #f5ca00));
+  background: -ms-linear-gradient(bottom, #ff8a00, #f5ca00);
+  background: -moz-linear-gradient(center bottom, #ff8a00 0%, #f5ca00 100%);
+  z-index: 2;
+}
+.digit.number5 .pixel1,
+.digit.number5 .pixel2,
+.digit.number5 .pixel3,
+.digit.number5 .pixel4,
+.digit.number5 .pixel5,
+.digit.number5 .pixel7,
+.digit.number5 .pixel9,
+.digit.number5 .pixel10,
+.digit.number5 .pixel11,
+.digit.number5 .pixel12,
+.digit.number5 .pixel14,
+.digit.number5 .pixel16,
+.digit.number5 .pixel17,
+.digit.number5 .pixel18,
+.digit.number5 .pixel19,
+.digit.number5 .pixel20 {
+  -webkit-box-shadow: 0 1px 30px #ff0000;
+  -moz-box-shadow: 0 1px 30px #ff0000;
+  box-shadow: 0 1px 30px #ff0000;
+  background: #ff8a00;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ff8a00), color-stop(1, #f5ca00));
+  background: -ms-linear-gradient(bottom, #ff8a00, #f5ca00);
+  background: -moz-linear-gradient(center bottom, #ff8a00 0%, #f5ca00 100%);
+  z-index: 2;
+}
+.digit.number6 .pixel1,
+.digit.number6 .pixel2,
+.digit.number6 .pixel3,
+.digit.number6 .pixel4,
+.digit.number6 .pixel5,
+.digit.number6 .pixel7,
+.digit.number6 .pixel9,
+.digit.number6 .pixel10,
+.digit.number6 .pixel11,
+.digit.number6 .pixel12,
+.digit.number6 .pixel13,
+.digit.number6 .pixel14,
+.digit.number6 .pixel15,
+.digit.number6 .pixel16,
+.digit.number6 .pixel17,
+.digit.number6 .pixel18,
+.digit.number6 .pixel19,
+.digit.number6 .pixel20 {
+  -webkit-box-shadow: 0 1px 30px #ff0000;
+  -moz-box-shadow: 0 1px 30px #ff0000;
+  box-shadow: 0 1px 30px #ff0000;
+  background: #ff8a00;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ff8a00), color-stop(1, #f5ca00));
+  background: -ms-linear-gradient(bottom, #ff8a00, #f5ca00);
+  background: -moz-linear-gradient(center bottom, #ff8a00 0%, #f5ca00 100%);
+  z-index: 2;
+}
+.digit.number7 .pixel1,
+.digit.number7 .pixel2,
+.digit.number7 .pixel3,
+.digit.number7 .pixel4,
+.digit.number7 .pixel6,
+.digit.number7 .pixel8,
+.digit.number7 .pixel12,
+.digit.number7 .pixel14,
+.digit.number7 .pixel16,
+.digit.number7 .pixel20 {
+  -webkit-box-shadow: 0 1px 30px #ff0000;
+  -moz-box-shadow: 0 1px 30px #ff0000;
+  box-shadow: 0 1px 30px #ff0000;
+  background: #ff8a00;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ff8a00), color-stop(1, #f5ca00));
+  background: -ms-linear-gradient(bottom, #ff8a00, #f5ca00);
+  background: -moz-linear-gradient(center bottom, #ff8a00 0%, #f5ca00 100%);
+  z-index: 2;
+}
+.digit.number8 .pixel,
+.digit.full .pixel {
+  -webkit-box-shadow: 0 1px 30px #ff0000;
+  -moz-box-shadow: 0 1px 30px #ff0000;
+  box-shadow: 0 1px 30px #ff0000;
+  background: #ff8a00;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ff8a00), color-stop(1, #f5ca00));
+  background: -ms-linear-gradient(bottom, #ff8a00, #f5ca00);
+  background: -moz-linear-gradient(center bottom, #ff8a00 0%, #f5ca00 100%);
+  z-index: 2;
+}
+.digit.number9 .pixel1,
+.digit.number9 .pixel2,
+.digit.number9 .pixel3,
+.digit.number9 .pixel4,
+.digit.number9 .pixel5,
+.digit.number9 .pixel6,
+.digit.number9 .pixel7,
+.digit.number9 .pixel8,
+.digit.number9 .pixel9,
+.digit.number9 .pixel10,
+.digit.number9 .pixel11,
+.digit.number9 .pixel12,
+.digit.number9 .pixel14,
+.digit.number9 .pixel16,
+.digit.number9 .pixel20 {
+  -webkit-box-shadow: 0 1px 30px #ff0000;
+  -moz-box-shadow: 0 1px 30px #ff0000;
+  box-shadow: 0 1px 30px #ff0000;
+  background: #ff8a00;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ff8a00), color-stop(1, #f5ca00));
+  background: -ms-linear-gradient(bottom, #ff8a00, #f5ca00);
+  background: -moz-linear-gradient(center bottom, #ff8a00 0%, #f5ca00 100%);
+  z-index: 2;
+}
+.clock {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+.clock .digit-group {
+  float: left;
+  height: 100%;
+}
+.clock .digit-group .digit {
+  width: 47%;
+}
+.clock .digit-group .spacer {
+  float: left;
+  width: 5%;
+  height: 100%;
+}
+.clock .colon {
+  float: left;
+  width: 6%;
+  height: 100%;
+}
+.clock .colon .pixel {
+  -webkit-box-shadow: 0 1px 30px #ff0000;
+  -moz-box-shadow: 0 1px 30px #ff0000;
+  box-shadow: 0 1px 30px #ff0000;
+  background: #ff8a00;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ff8a00), color-stop(1, #f5ca00));
+  background: -ms-linear-gradient(bottom, #ff8a00, #f5ca00);
+  background: -moz-linear-gradient(center bottom, #ff8a00 0%, #f5ca00 100%);
+  z-index: 2;
+  float: left;
+  width: 53%;
+  height: 14.285714285714286%;
+  margin-left: 25%;
+}
+.clock .colon .spacer {
+  float: left;
+  width: 100%;
+}
+.clock .colon .spacer.top,
+.clock .colon .spacer.bottom,
+.clock .colon .spacer.middle {
+  height: 23.80952380952381%;
+}
+.clock.hours.minutes .digit-group {
+  width: 47%;
+}
+.clock.hours.minutes.seconds .digit-group{
+  width: 29.333333333333332%;
+}
+
+a {
+  color: #00B7FF;
+}
