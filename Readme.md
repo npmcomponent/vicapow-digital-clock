@@ -1,5 +1,5 @@
 # digital clock
- a simple retro digital clock
+ a simple, responsive (and don't forget retro!) digital clock. because, why not?
 
 ![digital clock](http://i.imgur.com/b6UvV.png)
 
