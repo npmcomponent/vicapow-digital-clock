@@ -1,5 +1,5 @@
 
-var $ = require('jquery')
+var $ = require('component-jquery')
 
 function DigitalClock(opts){
   var el = this.el = $(require('./template-clock'))
